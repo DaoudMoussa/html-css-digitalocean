@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: blue;
+}
+
+body p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.full-length {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #006aff;
+    color: white;
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #1633ff;
+    border-color: transparent;
+}
+
+.btn-secondary {
+    color: #006aff;
+    background-color: white;
+    border: 1px solid #006aff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #006aff;
+    color: white;
+    border-color: transparent;
+}
+
+main section {
+    padding: 100px 0;
+}
+
+#jumbotron {
+    color: white;
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+}
+.get-started {
+    display: block;
+    color: white;
+    background: rgb(3, 27, 78);
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.get-started:hover,
+.get-started:focus {
+    background: rgb(21, 205, 114);
+    box-shadow: 0 0 1px 5px rgba(3, 27, 78, 0.1);
+    transform: scale(1.005);
+    color: white;
+    text-decoration: none;
+}
+
+.container-jumbo {
+    padding-top: 30px;
+}
+
+.text-box {
+    margin-bottom: 20px;
+}
+#jumbotron h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#jumbotron h1 + p {
+    font-size: 24px;
+}
+
+#jumbotron .card {
+    max-width: 370px;
+    margin: auto;
+    background: white;
+    color: rgb(3, 27, 78);
+    border-radius: 10px;
+}
+
+#jumbotron .card h4 {
+    padding: 28px 0;
+    background: #f3f5f9;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 16px;
+}
+
+.card form {
+    padding: 28px;
+}
+
+.form-gorup {
+    margin-bottom: 5px;
+}
+
+.card .form-control {
+    height: 48px;
+    border: 1px solid #e5e8ed;
+    border-radius: 3px;
+}
+
+.card .form-control:focus {
+    border: 1px solid #0069ff;
+    outline: #0069ff;
+    box-shadow: none;
+}
+
+.button-container {
+    padding: 28px;
+    border-top: 1px solid #f3f5f9;
+}
+
+.button-container .su-google {
+    width: 80%;
+}
+
+.button-container .github {
+    width: 42px;
+    padding: 10px;
+}
+
+.terms {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.terms a {
+    color: white;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+@media (min-width: 768px) {
+    .text-box {
+        padding-top: 50px;
+    }
+}
