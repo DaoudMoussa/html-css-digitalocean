@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+a {
+    transition: color 0.3s, background-color 0.3s;
+}
+
 .full-length {
     width: 100%;
 }
@@ -50,7 +54,6 @@ a.angle-right::after {
     text-align: center;
     padding: 10px 20px;
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-primary:hover,
@@ -66,7 +69,6 @@ a.angle-right::after {
     text-align: center;
     padding: 10px 20px;
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-secondary:hover,
@@ -126,28 +128,38 @@ main section.secondary-background-color {
     padding: 10px 10px;
 }
 
-.navbar {
-    padding: 0 10px;
-    margin: 0;
-}
-
 .navbar-default {
     background-color: white;
     border: transparent;
     border-radius: 0;
     border-bottom: 1px solid rgb(229, 232, 237);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.04);
-}
-
+    padding: 0 25px;
+    margin: 0;
 }
 
 .navbar-brand {
-    padding: 11px 15px;
+    padding: 11px 0;
     margin-right: 10px;
 }
 
 .navbar-brand img {
     height:28px;
+}
+
+.navbar-default .navbar-toggle {
+    background: white;
+    border:transparent;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #031b4f;
+    height: 3px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -157,6 +169,17 @@ main section.secondary-background-color {
     margin-top: 10px;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #006aff;
+}
+
+.dropdown::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: ' \f107';
+    color: #031b4f;
+}
 .navbar li:first-child {
     margin-right: 5px;
 }
@@ -308,6 +331,8 @@ main section.secondary-background-color {
 
 #technology ul.horizontal li a {
     border-bottom: 2px solid #e5e8ed;
+    white-space: nowrap;
+
 }
 
 #technology ul.horizontal li.current-item a {
@@ -467,8 +492,8 @@ td a{
 
 #cta .btn-secondary:hover,
 #cta .btn-secondary:focus {
-    background: rgba(225,225,225,0.9);
-    color: #0069ff;
+    background: rgba(225,225,225,0.9) !important;
+    color: #0069ff !important;
 }
 
 footer {
