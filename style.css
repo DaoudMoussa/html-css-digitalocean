@@ -1,15 +1,26 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: blue;
+    background-color: white;
 }
 
 body p {
     font-weight: 300;
     margin: 0;
+    color: #5b6987;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #031b4e;
+    margin: 0;
 }
 
 .full-length {
     width: 100%;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
@@ -63,6 +74,23 @@ main section {
     padding: 100px 0;
 }
 
+main section.secondary-background-color {
+    background-color: #f4f5f9;
+}
+
+.title-box {
+    max-width: 770px;
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.title-box h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
 #jumbotron {
     color: white;
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
@@ -70,6 +98,11 @@ main section {
     background-position: center;
     padding-top: 30px;
 }
+#jumbotron p,
+#jumbotron h1 {
+    color:white;
+}
+
 .get-started {
     display: block;
     color: white;
@@ -147,11 +180,12 @@ main section {
 }
 
 .button-container .su-google {
-    width: 80%;
+    width: calc(100% - 45px);
 }
 
 .button-container .github {
     width: 42px;
+    margin-left: 3px;
     padding: 10px;
 }
 
@@ -172,7 +206,6 @@ main section {
 
 #business-solutions-cta {
     padding: 50px 0;
-    background: #f3f5f9;
 }
 
 #business-solutions-cta h3 {
@@ -186,8 +219,98 @@ main section {
     margin-top: 15px;
 }
 
+#business-solutions-cta img.full-length {
+    max-width: 156px;
+}
+
+#technology ul li a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #5b6987;
+}
+
+#technology ul.horizontal li {
+    float: left;
+    padding: 0;
+}
+
+#technology ul.horizontal li a {
+    border-bottom: 2px solid #e5e8ed;
+}
+
+#technology ul.horizontal li.current-item a {
+    border-bottom: 2px solid #016bff;
+    color: #031b4e;
+}
+
+#technology ul.vertical li a {
+    border-left: 2px solid #e5e8ed;
+}
+
+#technology ul.vertical li.current-item a {
+    border-left: 2px solid #016bff;
+    color: #031b4e;
+}
+
+#technology .box {
+    padding: 10px;
+}
+
+#technology .box h3 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+#design .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: lighter;
+    color: #7b88a2;
+}
+
+#design .carousel-content {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#design .carousel-content img {
+    box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+}
+
+#design .carousel-content p {
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.circle-container .circle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #016bff;
+    margin-right: 3px;
+}
+
+.circle-container .circle.current-item {
+    background-color: #016bff;
+}
+
 @media (min-width: 768px) {
     .text-box {
         padding-top: 50px;
+    }
+
+    #business-solutions-cta img.full-length {
+        margin-top: 5px;
+        max-width: 156px;
+    }
+
+    #technology .box {
+        text-align: left;
     }
 }
