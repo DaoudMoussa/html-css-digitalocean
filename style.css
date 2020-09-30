@@ -308,6 +308,38 @@ main section.secondary-background-color {
     margin-bottom: 50px;
 }
 
+#spreading {
+    background: #031b4e url("https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg");
+}
+
+#spreading .long-table {
+    max-width: 535px;
+    margin: auto;
+}
+
+#spreading h2,
+#spreading p,
+#spreading td:first-child {
+    color:white;
+}
+
+#spreading td {
+    color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+#spreading td:last-child {
+    text-align: right;
+}
+
+#spreading td.first-row {
+    border:none;
+}
+
+td a{
+    color:rgb(0, 215, 210);
+}
+
 @media (min-width: 768px) {
     .text-box {
         padding-top: 50px;
