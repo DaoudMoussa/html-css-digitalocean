@@ -252,16 +252,16 @@ main section.secondary-background-color {
     color: #031b4e;
 }
 
-#technology .box {
+.content-box {
     padding: 10px;
 }
 
-#technology .box h3 {
+.content-box h3 {
     margin: 20px 0 10px;
     font-size: 18px;
 }
 
-#design .arrow {
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -270,17 +270,17 @@ main section.secondary-background-color {
     color: #7b88a2;
 }
 
-#design .carousel-content {
+.carousel-content {
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
 }
 
-#design .carousel-content img {
+.carousel-content img {
     box-shadow: 0 2px 4px rgba(3,27,78,0.06);
 }
 
-#design .carousel-content p {
+.carousel-content p {
     font-weight: 400;
     margin-top: 32px;
     margin-bottom: 20px;
@@ -300,6 +300,14 @@ main section.secondary-background-color {
     background-color: #016bff;
 }
 
+#business-solutions .content-box {
+    max-width: 770px;
+}
+
+#business-solutions .content-box:not(.last) {
+    margin-bottom: 50px;
+}
+
 @media (min-width: 768px) {
     .text-box {
         padding-top: 50px;
@@ -310,7 +318,14 @@ main section.secondary-background-color {
         max-width: 156px;
     }
 
-    #technology .box {
+    .content-box:not(.left-md) {
         text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-box {
+        text-align: left;
+        margin-bottom: 0;
     }
 }
