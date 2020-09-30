@@ -114,10 +114,10 @@ main section.secondary-background-color {
 .get-started:hover,
 .get-started:focus {
     background: rgb(21, 205, 114);
-    box-shadow: 0 0 1px 5px rgba(3, 27, 78, 0.1);
     transform: scale(1.005);
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container-jumbo {
@@ -399,6 +399,65 @@ td a{
     color: #0069ff;
 }
 
+footer {
+    background: #010e28;
+    padding: 50px 50px 0;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-top ul {
+    display: inline-block;
+}
+.footer-top li:first-child {
+    color: white;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.footer-top li a {
+    display: inline-block;
+    padding: 5px 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+}
+
+.footer-top li a:hover,
+.footer-top li a:focus {
+    color: white;
+}
+
+.footer-bottom {
+    padding-top: 50px;
+}
+
+.footer-bottom p {
+    margin-left: 20px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom ul {
+    margin: 0;
+}
+
+.footer-bottom a {
+    display: inline-block;
+    padding: 14.5px 3px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 21px;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: white;
+}
+
+
+
 @media (min-width: 768px) {
     .text-box {
         padding-top: 50px;
@@ -411,6 +470,15 @@ td a{
 
     .content-box:not(.left-md) {
         text-align: left;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+
+    .footer-bottom ul {
+        display: inline-block;
+        float: right;
     }
 }
 
