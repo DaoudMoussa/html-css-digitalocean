@@ -273,17 +273,17 @@ main section.secondary-background-color {
 .carousel-content {
     width: 80%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
-.carousel-content img {
+#design .carousel-content img {
     box-shadow: 0 2px 4px rgba(3,27,78,0.06);
 }
 
 .carousel-content p {
     font-weight: 400;
     margin-top: 32px;
-    margin-bottom: 20px;
     font-size: 16px;
 }
 
@@ -340,6 +340,65 @@ td a{
     color:rgb(0, 215, 210);
 }
 
+#for-team .carousel-content {
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+    padding: 70px;
+}
+
+#for-team .carousel-content img{
+    width: 100%;
+    max-width: 200px;
+}
+
+#for-team .carousel-content .quote {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#for-team .carousel-content .quote i {
+    opacity: 0.6;
+}
+
+#for-team .carousel-content .quote i:last-child {
+    font-size: 8px;
+    vertical-align: baseline;
+}
+
+#for-team .carousel-content .cit {
+    font-size: 16px;
+}
+
+#for-team .carousel-content .cit span {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#cta {
+    padding: 50px 0;
+    background: url("https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg");
+}
+
+#cta h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#cta .btn-secondary {
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#cta .btn-secondary:hover,
+#cta .btn-secondary:focus {
+    background: rgba(225,225,225,0.9);
+    color: #0069ff;
+}
+
 @media (min-width: 768px) {
     .text-box {
         padding-top: 50px;
@@ -360,4 +419,16 @@ td a{
         text-align: left;
         margin-bottom: 0;
     }
+
+    #cta {
+        text-align: right;
+    }
+
+
+    #cta h2 {
+        text-align: left;
+        padding: 15px 0;
+        margin: 0;
+    }
+
 }
