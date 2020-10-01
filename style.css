@@ -324,6 +324,16 @@ main section.secondary-background-color {
     color: #5b6987;
 }
 
+.scroll {
+    overflow-x: auto;
+}
+
+#technology ul.horizontal {
+    width: 403px;
+    margin: auto;
+    padding: 0;
+}
+
 #technology ul.horizontal li {
     float: left;
     padding: 0;
