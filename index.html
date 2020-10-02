@@ -11,6 +11,7 @@
         <title>DigitalOcean – The developer cloud</title>
 
     </head>
+
     <body>
         <header class="navbar-fixed-top">
             <div class="header-top">
@@ -40,22 +41,387 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    <a class="navbar-brand" href="#"><img src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt=""> </a>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a class="dropdown" href="#">Products</a></li>
-                        <li><a class="dropdown" href="#">Solutions</a></li>
-                        <li><a href="#">Marketplace</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a class="dropdown" href="#">Community</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="btn btn-secondary">Sing In</a></li>
-                        <li><a href="#" class="btn btn-primary">Sign Up</a></li>
-                    </ul>
-                  </div><!--/.nav-collapse -->
+                        <a class="navbar-brand" href="#"><img src="https://images.prismic.io/www-static/49aa0a09-06d2-4bba-ad20-4bcbe56ac507_logo.png?auto=compress,format" alt=""> </a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="angle-down" href="#">Products</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content-container">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="left-content">
+                                                    <ul class="list-w-img">
+                                                        <li>
+                                                            <h5>Featured Products</h5>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2Fc5136b33-0193-4b92-8ef1-c6e34a9a8a64_droplets-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Droplets</dt>
+                                                                    <dd>Scalable virtual machines</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2F9e286c97-a89a-4e26-954c-2af1ba07f53c_kubernetes-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Kubernetes</dt>
+                                                                    <dd>Managed Kubernetes clusters</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2Fda8ba23a-63b2-414e-b5c3-3412b09d0be5_managed-database-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Databases</dt>
+                                                                    <dd>Worry-free setup & maintenance</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2Ffdd20525-076d-4f69-afb5-2bdf0a27f399_spaces-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Spaces</dt>
+                                                                    <dd>Simple object storage</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <div class="right-content">
+                                                    <div class="row">
+                                                        <div class="col-xs-4">
+                                                            <ul class="list-wo-img">
+                                                                <li>
+                                                                    <img src="https://prismic-io.s3.amazonaws.com/www-static%2F9df740a5-0736-4447-acae-0f2b1fc2c709_compute-icon.svg" alt="">
+                                                                    <h5>Compute</h5>
+                                                                </li>
+                                                                <li><a href="#">Droplets</a></li>
+                                                                <li><a href="#">Kubernetes</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <ul class="list-wo-img">
+                                                                <li>
+                                                                    <img src="https://prismic-io.s3.amazonaws.com/www-static%2F2e5ffd50-1bc6-44f8-99e0-e98be57e49cb_database-2-icon.svg" alt="">
+                                                                    <h5>Managed databases</h5>
+                                                                </li>
+                                                                <li><a href="">MySQL</a></li>
+                                                                <li><a href="">PostgreSQL</a></li>
+                                                                <li><a href="">Redis <span class="apice">TM</span> </a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <ul class="list-wo-img">
+                                                                <li>
+                                                                    <img src="https://prismic-io.s3.amazonaws.com/www-static%2F4a78e988-36c1-4623-9b90-3a16c941e866_developer-tools-icon.svg" alt="">
+                                                                    <h5>Developer tools</h5>
+                                                                </li>
+                                                                <li><a href="">API</a></li>
+                                                                <li><a href="">CLI</a></li>
+                                                                <li><a href="">Monitoring</a></li>
+                                                                <li><a href="">Teams</a></li>
+                                                                <li><a href="">Support</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <ul class="list-wo-img">
+                                                                <li>
+                                                                    <img src="https://prismic-io.s3.amazonaws.com/www-static%2F87c2d9a5-1a9d-4ab2-897b-a9be953d9d9f_storage-icon.svg" alt="">
+                                                                    <h5>Storage</h5>
+                                                                </li>
+                                                                <li><a href="">Spaces Object Storage</a></li>
+                                                                <li><a href="">Volumes Block Storage</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <ul class="list-wo-img">
+                                                                <li>
+                                                                    <img src="https://prismic-io.s3.amazonaws.com/www-static%2F3e7adf23-bf9d-492b-94c3-ec8245ad9fbf_networking-icon.svg" alt="">
+                                                                    <h5>Networking</h5>
+                                                                </li>
+                                                                <li><a href="">Virtual Private Cloud (VPC)</a></li>
+                                                                <li><a href="">Cloud Firewalls</a></li>
+                                                                <li><a href="">Load Balancers</a></li>
+                                                                <li><a href="">Floating IPs</a></li>
+                                                                <li><a href="">DNS</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="link-container text-center">
+                                                    <a href="" class="angle-right">
+                                                        See all products
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a class="angle-down" href="#">Solutions</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content-container">
+                                        <div class="left-content">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <ul class="list-w-img">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/778e547e-58df-49bf-80b9-8e2f23a19efd_icon-website-hosting.svg" alt="">
+                                                                <span>
+                                                                    <dt>Website Hosting</dt>
+                                                                    <dd>Easily and reliably host a website</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/a3ff5218-7baa-4055-8e8b-6024f5775891_icon-web-mobile-apps.svg" alt="">
+                                                                <span>
+                                                                    <dt>Web & Mobile Apps</dt>
+                                                                    <dd>Qickly build and reliaby your apps</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/789b3c0d-f589-4263-a34e-cca77bc15118_icon-video-streaming-hosting.svg" alt="">
+                                                                <span>
+                                                                    <dt>Video Streaming Hosting</dt>
+                                                                    <dd>Create  highly available atreaming service</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/6ed64bba-bb34-46ae-b49b-4f93e58dba53_icon-gaming-dev.svg" alt="">
+                                                                <span>
+                                                                    <dt>Gaming Development</dt>
+                                                                    <dd>Scale your game as fast as you want</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/f7d25545-237d-40f1-9d21-07486beda2d4_icon-cloud-vpn.svg" alt="">
+                                                                <span>
+                                                                    <dt>Cloud VPN</dt>
+                                                                    <dd>Quickly set up a fast, reliable, and easy to use VPN</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-xs-6">
+                                                    <ul class="list-w-img">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/0d0e08b3-eb66-4b13-8a6b-862dd4600516_icon-big-data.svg" alt="">
+                                                                <span>
+                                                                    <dt>Big data Computing</dt>
+                                                                    <dd>Run batch and streaming big data workloads</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/5e5aae18-4099-47f4-8dbe-e8d4a51c4db2_icon-cloud-computing-startups.svg" alt="">
+                                                                <span>
+                                                                    <dt>Startups</dt>
+                                                                    <dd>A cloud partnership to power your startup</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/b858a5fc-4cde-4ec5-91bd-823d50b1850e_icon-saas-dev.svg" alt="">
+                                                                <span>
+                                                                    <dt>SaaS Development</dt>
+                                                                    <dd>Build your SaaS exactly how you want</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/179f91e8-1c4e-454b-948e-e81c6f0da217_icon-agency-web-dev.svg" alt="">
+                                                                <span>
+                                                                    <dt>Agency & Web Dev Shops</dt>
+                                                                    <dd>Create powerful websites and applications for your clients</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static/34251fe4-28a1-4f54-944c-0141a17cee8a_icon-managed-cloud-hosting.svg" alt="">
+                                                                <span>
+                                                                    <dt>Managed Cloud Hosting Providers</dt>
+                                                                    <dd>We make cloud hosting simple and cost-efficient</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="link-container text-center">
+                                                    <a href="" class="angle-right">
+                                                        See all products
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="#">Marketplace</a>
+                            </li>
+                            <li>
+                                <a href="#">Customers</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="angle-down" href="#">Community</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content-container">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="left-content">
+                                                    <ul class="list-w-img">
+                                                        <li>
+                                                            <h5>Community</h5>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2F3bcb81cd-1877-427b-837b-cd4dc877d016_community-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Overview</dt>
+                                                                    <dd>Connect, share and learn</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2Ffba5672c-1c4d-4be5-a956-00f7823cf5ac_tutorials-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Tutorials</dt>
+                                                                    <dd>DevOps and development guides</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2F003d7009-4716-45c8-a099-8a6885d0c9cc_q-and-a-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Questions and Answers</dt>
+                                                                    <dd>Development and system Q&A</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://prismic-io.s3.amazonaws.com/www-static%2Fce682ec9-07ea-41b8-a0fb-228cb2cd08d4_projects-icon.svg" alt="">
+                                                                <span>
+                                                                    <dt>Tools</dt>
+                                                                    <dd>Community-built integrations</dd>
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="middle-content">
+                                                    <ul class="list-wo-img">
+                                                        <li>
+                                                            <h5>Get involved</h5>
+                                                        </li>
+                                                        <li><a href="#">Write for Donations</a></li>
+                                                        <li><a href="#">Meetups</a></li>
+                                                        <li><a href="#">Hatch Starup Program</a></li>
+                                                        <li><a href="#">Open Source Sponsorships</a></li>
+                                                        <li><a href="#">Hacktoberfest</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-4">
+                                                <div class="right-content">
+                                                    <ul class="list-w-img">
+                                                        <li>
+                                                            <h5>featured articles</h5>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://images.prismic.io/www-static/63808eba4b5c17be2c07d709771310e1ce75b6b6_article-1.jpg?auto=compress,format" alt="">
+                                                                <span>
+                                                                    How to deploy a PHP Application with Kubernetes on Ubuntu 16.04
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://images.prismic.io/www-static/cf6d27910f0fd823c5d494cf3ca833a786c106c5_article-2.jpg?auto=compress,format" alt="">
+                                                                <span>
+                                                                    Understanding database sharding
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="https://images.prismic.io/www-static/3644243d4edcb457a5ad46f2eb3b858e846c8659_article-3.jpg?auto=compress,format" alt="">
+                                                                <span>
+                                                                    How to build a Node.js Application with Docker
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="link-container text-center">
+                                                    <a href="" class="angle-right">
+                                                        See all products
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" class="btn btn-secondary">Sing In</a></li>
+                            <li><a href="#" class="btn btn-primary">Sign Up</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </nav>
         </header>
@@ -67,21 +433,21 @@
                         <div class="col-xs-12 col-md-offset-1 col-md-10">
                             <a class="get-started text-center img-rounded">
                                 <p>
-                                    <strong>Free credit active</strong>
-                                    : Get started on DigitalOcean with a $100, 60-day credit for new users.
+                                    <strong>Free credit active:</strong>
+                                    Get started on DigitalOcean with a $100, 60-day credit for new users.
                                 </p>
                             </a>
                         </div>
                     </div>
                     <div class="container-jumbo">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="col-xs-12 col-sm-6 col-lg-7">
                                 <div class="text-box">
                                     <h1>Welcome to the developer cloud</h1>
                                     <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 col-lg-4">
                                 <div class="card text-center">
                                     <h4>Deploy in seconds</h4>
                                     <form>
@@ -154,7 +520,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12  visible-xs-block ">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="scroll text-center">
                                 <ul class="horizontal list-inline clearfix">
                                     <li class="current-item">
@@ -174,26 +540,6 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <ul class="vertical list-unstyled hidden-xs">
-                                <li class="current-item">
-                                    <a href="#">Deploy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Scale</a>
-                                </li>
-                                <li>
-                                    <a href="#">Store</a>
-                                </li>
-                                <li>
-                                    <a href="#">Secure</a>
-                                </li>
-                                <li>
-                                    <a href="#">Monitor</a>
-                                </li>
-                            </ul>
                         </div>
 
                         <div class="col-xs-12 col-sm-9">
@@ -291,7 +637,7 @@
                         </div>
 
                         <div class="col-xs-12 col-md-3">
-                            <div class="content-box left-md">
+                            <div class="content-box">
                                 <img src="https://prismic-io.s3.amazonaws.com/www-static/7531f96f-5414-42c2-ba65-0d705769c62f_icon-check-shield.svg" alt="">
                                 <h3>Reliable platform</h3>
                                 <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
@@ -299,7 +645,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="content-box left-md">
+                            <div class="content-box">
                                 <img src="https://prismic-io.s3.amazonaws.com/www-static/4083b409-5e65-4403-86a8-7ed8f501a0d8_icon-task-list-multiple.svg" alt="">
                                 <h3>Predictable pricing</h3>
                                 <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
@@ -307,7 +653,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="content-box left-md">
+                            <div class="content-box">
                                 <img src="https://prismic-io.s3.amazonaws.com/www-static/fccb0e1b-4de3-4b58-9f3e-5455f5c3aeae_icon-headphones-customer-support-human.svg" alt="">
                                 <h3>World-class service</h3>
                                 <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
@@ -315,7 +661,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-3">
-                            <div class="content-box left-md last">
+                            <div class="content-box last">
                                 <img src="https://prismic-io.s3.amazonaws.com/www-static/1c791b14-833f-4190-a865-a55e11055fc0_icon-certified-certificate.svg" alt="">
                                 <h3>Security and compliance</h3>
                                 <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
