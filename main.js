@@ -26,11 +26,19 @@ function toggleDropdownMenus() {
 
             if(clickedVoice.classList.contains('angle-down')) clickedVoice = clickedVoice.parentElement;
 
-            if(document.querySelector('.dropdown .dropdown-menu.visible')) document.querySelector('.dropdown .dropdown-menu.visible').classList.remove('visible');
-            
+            let clickedVoiceDropdown;
             for (var i = 0; i < clickedVoice.children.length; i++) {
-                if(clickedVoice.children[i].classList.contains('dropdown-menu')) clickedVoice.children[i].classList.toggle('visible');
+                if(clickedVoice.children[i].classList.contains('dropdown-menu')) {
+                    clickedVoiceDropdown = clickedVoice.children[i];
+                }
             }
+
+            if(document.querySelector('.dropdown .dropdown-menu.visible') != clickedVoiceDropdown && document.querySelector('.dropdown .dropdown-menu.visible')) {
+                document.querySelector('.dropdown .dropdown-menu.visible').classList.remove('visible');
+            }
+
+            clickedVoiceDropdown.classList.toggle('visible');
+            
         });
     }
 }
